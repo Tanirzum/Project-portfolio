@@ -1,5 +1,9 @@
+
+/* Импортируем текст */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+/* используем псевдокласс root для обьявление переменных */
 :root {
 	/* Main theme colors */
 	--first-color: #0e2431;
@@ -32,9 +36,9 @@
 	--scroll-bar-color: #c5cadf;
 	--scroll-thumb-color: #70768a;
 	--scroll-thumb-hover-color: #454f6b;
-
 }
 
+/* Используем для черной темы */
 .dark-theme {
 	/* Main theme colors */
 	--first-color: #fff;
@@ -57,6 +61,7 @@
 	--scroll-thumb-hover-color: #454f6b;
 }
 
+/* Обнуление  */
 * {
 	margin: 0;
 	padding: 0;
@@ -66,6 +71,7 @@
 	list-style: none;
 }
 
+/* используем для прокрутки плавно */
 html {
 	scroll-behavior: smooth;
 }
@@ -77,6 +83,7 @@ body {
 	transition: .5s ease;
 }
 
+/* используем для прокрутки верх */
 .scrollToTop-btn {
 	z-index: 3;
 	position: fixed;
@@ -99,7 +106,7 @@ body {
 	opacity: 1;
 }
 
-/* light/dark */
+/* Стиль кнопки для ночной темы*/
 .theme-btn {
 	z-index: 99;
 	position: fixed;
@@ -115,9 +122,6 @@ body {
 	cursor: pointer;
 }
 
-.theme-btn .fa-sun {
-	display: none;
-}
 
 ::-webkit-scrollbar {
 	width: 10px;
@@ -130,7 +134,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: var(--scroll-thumb-hover-colorcolor);
+	background-color: var(--scroll-thumb-hover-color);
 }
 
 /* header */
@@ -274,11 +278,11 @@ header {
 	animation: arrow-down ease 2s infinite;
 }
 
+/* Используем для анимаций */
 @keyframes arrow-down {
 	0% {
 		transform: translateY(0);
 	}
-
 	30% {
 		transform: translateY(10px);
 	}
@@ -601,10 +605,10 @@ footer {
 
 
 
-/* media query max-width */
+/* Медиа запросы */
 @media screen and (max-width: 1070px) {
 
-	/* header section */
+	/* Для Header */
 
 	.navigation {
 		position: fixed;
@@ -676,12 +680,12 @@ footer {
 		display: block;
 	}
 
-	/* home section */
+	/* для home*/
 	.home .home-container .info {
 		font-size: 0.85rem;
 	}
 
-	/* about seciton */
+	/* для about*/
 
 	.about .container .content {
 		display: grid;
@@ -706,7 +710,7 @@ footer {
 	.about-info .professional-list .list-item {
 		justify-content: start;
 	}
-
+/* для footer */
 footer .footer-container {
 	flex-direction: column;
 }
@@ -735,7 +739,7 @@ footer .footer-container {
 		transform: translateY(-65px);
 	}
 
-	/* home section */
+	/* для home*/
 
 	.home .home-container {
 		display: grid;
